@@ -1,0 +1,8 @@
+[[spade]]
+arch = "x86_64"
+git-tree-sha1 = "c6bb2cc7f4e9badf01f70ccba8dd3ee325d0406b"
+os = "windows"
+
+    [[spade.download]]
+    sha256 = "0543a6b63c486bd7893842fe09698afa5e9834ba11bf0db48c6febd892287261"
+    url = "https://github.com/MartinBonde/SPADE.jl/releases/download/v0.1.0/spade-0.1.0-windows-x86_64.tar.gz"

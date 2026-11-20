@@ -1,0 +1,19 @@
+name = "SPADE"
+uuid = "c3e1a8d2-6f4b-4d7a-8e15-2a9b7c0d4e63"
+version = "0.1.0"
+authors = ["Martin Kirk Bonde <martin@bonde.dk>"]
+
+[deps]
+Artifacts = "56f22d72-fd6d-98f1-02f0-08ddc0907c33"
+MathOptInterface = "b8f27783-ece8-5eb3-8dc8-9495eed66fee"
+NaNMath = "77ba4419-2d1f-58cd-9bb1-8ffee604a2e3"
+PrecompileTools = "aea7be01-6a6a-4083-8856-8a6e6704d82a"
+SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
+Sockets = "6462fe0b-24de-5631-8697-dd941f90decc"
+TOML = "fa267f1f-6049-4f14-aa54-33bafae1ed76"
+
+[compat]
+MathOptInterface = "1.51"
+NaNMath = "1"
+PrecompileTools = "1"
+julia = "1.11"
