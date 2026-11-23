@@ -17,6 +17,7 @@ const TERMINATION_STATUS = (
     root = MOI.LOCALLY_SOLVED,
     time_limit = MOI.TIME_LIMIT,
     memory_limit = MOI.MEMORY_LIMIT,
+    interrupt = MOI.INTERRUPTED,
     iteration_limit = MOI.ITERATION_LIMIT,
     stagnation = MOI.SLOW_PROGRESS,
     bound = MOI.LOCALLY_INFEASIBLE,

@@ -164,6 +164,7 @@ const STOP_MESSAGES = (
     iteration_limit = "The trial-attempt limit was reached.",
     time_limit = "The soft time limit was reached.",
     memory_limit = "The soft process resident memory limit was reached.",
+    interrupt = "The caller interrupted the solve.",
     stagnation = "The trust step cannot make further progress.",
     bound = "Bounds block the descent: the residual decreases only if the stop variables move past their bounds.",
     singular = "The residual cannot decrease near this point, where the Jacobian is singular or nearly singular.",
