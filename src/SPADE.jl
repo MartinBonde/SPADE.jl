@@ -37,8 +37,8 @@ include("moi_wrapper.jl")
 
 """
 The command that starts the server; the client adds the path of the pipe. Without a
-command, the first solve starts the server of the artifact `spade`, which Pkg
-installs with this package. The tests of the repository set another command.
+command, the first solve starts the server of the artifact `spade`, which the build
+of this package downloads. The tests of the repository set another command.
 """
 const SERVER_COMMAND = Ref{Cmd}()
 
@@ -46,7 +46,10 @@ const SERVER_COMMAND = Ref{Cmd}()
 function _artifact_server()
     hash = artifact_hash("spade", joinpath(dirname(@__DIR__), "Artifacts.toml"))
     hash === nothing && error("The SPADE server runs only on 64-bit Windows.")
-    `$(joinpath(artifact_path(hash), "bin", "spade-server.exe"))`
+    server = joinpath(artifact_path(hash), "bin", "spade-server.exe")
+    isfile(server) ||
+        error("The SPADE solver is not installed. Run `import Pkg; Pkg.build(\"SPADE\")`.")
+    `$server`
 end
 
 "The running server, which serves one solve at a time."

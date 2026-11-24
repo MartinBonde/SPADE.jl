@@ -7,6 +7,7 @@ authors = ["Martin Kirk Bonde <martin@bonde.dk>"]
 Artifacts = "56f22d72-fd6d-98f1-02f0-08ddc0907c33"
 MathOptInterface = "b8f27783-ece8-5eb3-8dc8-9495eed66fee"
 NaNMath = "77ba4419-2d1f-58cd-9bb1-8ffee604a2e3"
+Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
 PrecompileTools = "aea7be01-6a6a-4083-8856-8a6e6704d82a"
 SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
 Sockets = "6462fe0b-24de-5631-8697-dd941f90decc"
